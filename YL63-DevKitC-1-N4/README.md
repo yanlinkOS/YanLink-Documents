@@ -2,11 +2,9 @@
 
 Hello everyone, I believe many novice developers have a question: what is NearLink? What are the differences and advantages of NearLink technology compared to traditional WiFi and BLE?
 
-First, to answer the first question, <font color='Peach'>NearLink (NearLink)</font> is a new generation of native Chinese wireless short-range communication technology. Aiming at the era of the Internet of Everything, NearLink introduces key technologies and innovative concepts, providing smart terminals with new connection methods.
+To answer the first question, <font color='Peach'>NearLink (NearLink)</font> is a new generation of native Chinese wireless short-range communication technology. Aiming at the era of the Internet of Everything, NearLink introduces key technologies and innovative concepts, providing smart terminals with new connection methods.
 
 ![NearLink_Logo](Image/NearLink_Logo.png)
-
-<center>(Image source: Hisilicon official website)</center>
 
 The second question: From the system architecture of SparkLink, the diagram shows that NearLink consists of three layers: the **Basic Application Layer**, the **Basic Service Layer**, and the **SparkLink Access Layer**.
 
@@ -22,23 +20,23 @@ In addition to device and service discovery, QoS, real-time streaming transmissi
 
 The SparkLink Access Layer provides two communication interfaces: <font color='Peach'>SparkLink Low Energy (SLE)</font> and <font color='Peach'>SparkLink Basic (SLB)</font>. SLE is comparable to Bluetooth, characterized by low power consumption, low latency, and high reliability; SLB is comparable to WiFi, characterized by large bandwidth, large capacity, and high precision.
 
-![a4a8f6d81e9271655edca1d3a49d05e](Image/NearLink的系统架构.png)
+![a4a8f6d81e9271655edca1d3a49d05e](Image/nearlink_arch.png)
 
 <center>NearLink System Architecture (Source: SparkLink Wireless Short-Range Communication Technology (SparkLink1.0) Industrialization Promotion White Paper)</center>
 
 **Comparison of SparkLink, WiFi, and Bluetooth Parameters**
 
-![img](Image/蓝牙、WiFi、星闪数据对比.png)
+![img](Image/compare-sheet.png)
 
 <center>Bluetooth 5.3, WiFi 7, and SparkLink Parameter Comparison (Source: Fresh Date Classroom "What Exactly Is 'SparkLink'")</center>
 
 Here we look at the data comparison between SparkLink, WiFi, and Bluetooth. From the table, it can be seen that SparkLink is "far ahead" in terms of latency, maximum number of connections, and communication distance.
 
-### Runhe W63E Development Board
+### YanLink YL63E Development Board
 
-The W63E core board is a core board from Runhe based on the HiSilicon WS63 solution, which highly integrates a 2.4GHz Wi-Fi & BLE & SLE HH-SPARK-WS63 module. It supports 802.11b/g/n/ax protocols, BLE5.3 protocol, BLE Mesh, and BLE gateway functions. It supports the SLE1.0 protocol and SLE gateway functions. It supports the OpenHarmony lightweight system and is suitable for always-on IoT smart scenarios such as large and small appliances and lighting. (The difference between the NearLink_DK_WS63 and NearLink_DK_WS63E development boards is that <font color='Peach'>the NearLink_DK_WS63E supports 2.4GHz radar human activity detection</font>)
+The W63E core board is a core board from YanLink based on the YL63 solution, which highly integrates a 2.4GHz Wi-Fi & BLE & SLE module. It supports 802.11b/g/n/ax protocols, BLE5.3 protocol, BLE Mesh, and BLE gateway functions. It supports the SLE1.0 protocol and SLE gateway functions. It supports the OpenHarmony/Oniro lightweight system and is suitable for always-on IoT smart scenarios such as large and small appliances and lighting. (The difference between the YL63 and YL63E development boards is that <font color='Peach'>the YL63E supports 2.4GHz radar human activity detection</font>)
 
-The NearLink_DK_WS63/WS63E has the following features:
+The YL63/YL63E has the following features:
 
 * Stable and reliable communication capability
 
@@ -50,9 +48,9 @@ The NearLink_DK_WS63/WS63E has the following features:
 
 * Open operating system
 
-![image-20240830145044259](Image/WS63、WS63E开发板.jpg)
+![image-20240830145044259](Image/YL63-YL63E_board.jpg)
 
-<center>WS63E Core Board</center>
+<center>YL63E Core Board</center>
 
 The board integrates basic circuits, including a CH340 programming circuit, crystal oscillator circuit, user buttons, LEDs, etc., enabling <font color='Blue'>programming and debugging with just one Type-C data cable</font>.
 
@@ -68,31 +66,31 @@ The board integrates basic circuits, including a CH340 programming circuit, crys
 | SparkLink  | * Sparklink Low Energy (SLE)<br />* Supports SLE 1.0<br />* Supports SLE 1MHz/2MHz/4MHz, maximum air interface data rate 12Mbps<br />* Supports Polar channel coding<br />* Supports SLE Gateway |
 | Other Information | * Power Supply Voltage Input: Typical 5V<br />* Operating Temperature: -40℃～+85℃ |
 
-<center>(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Sheet_V1.0")</center>
+<center>(Source: "YL63E SparkLink Development Board Specification Sheet_V1.0")</center>
 
-#### 2. WS63/WS63E SparkLink Core Board Functional Layout
+#### 2. YL63/YL63E SparkLink Core Board Functional Layout
 
-![img](Image/WS63、WS63E开发板.png)
+![img](Image/YL63-YL63E_board.png)
 
-<center>(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Sheet_V1.0")</center>
+<center>(Source: "YL63E SparkLink Development Board Specification Sheet_V1.0")</center>
 
 #### 3. Dimensions
 
-![img](Image/尺寸图.png)
+![img](Image/dimension.png)
 
-<center>(Source: "NearLink_DK_WS63E Sparkle Development Board Specification Sheet_V1.0")</center>
+<center>(Source: "YL63E Sparklink Development Board Specification Sheet_V1.0")</center>
 
 #### 4. Functional Block Diagram
 
-![img](Image/功能框图.png)
+![img](Image/function.png)
 
-(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Manual_V1.0")
+(Source: "YL63E SparkLink Development Board Specification Manual_V1.0")
 
 #### 5. SparkLink Development Kit
 
-![img](Image/星闪派开发套件.png)
+![img](Image/nearlink_dev_kits.png)
 
-The NearLink IoT development kit components include: ① WS63/WS63E core board, ② IoT base board, ③ display board, ④ NFC board, ⑤ environmental monitoring board, ⑥ smart traffic light board, ⑦ smart (colorful) light board, ⑧ Type-C data cable.
+The NearLink IoT development kit components include: ① YL63/YL63E core board, ② IoT base board, ③ display board, ④ NFC board, ⑤ environmental monitoring board, ⑥ smart traffic light board, ⑦ smart (colorful) light board, ⑧ Type-C data cable.
 
 #### 6. Documentation
 
@@ -121,19 +119,3 @@ near-link
   |---WS63                          # WS63 development board firmware
 |---tools                           # WS63 development board flashing tool
 ```
-
-**HiSilicon Community**
-
-NearLink Zone: https://developer.hisilicon.com/forum/0133146886267870001
-
-Ubuntu Environment Setup Tutorial: https://developer.hisilicon.com/postDetail?tid=0269158574011338004
-
-Docker Environment Configuration Tutorial: https://developer.hisilicon.com/postDetail?tid=0203158573698502004
-
-**Development Board Purchase**
-
-[Taobao] https://m.tb.cn/h.gMYOYubi9LnWmiE?tk=leLR35rcbCs HU0025 "Runhe WS63E NearLink Development Board 2.4G WiFi + BLE + SLE Supports Radar Sensing and OpenHarmony"
-
-**NearLink Developer Technical Exchange Group**
-
-![img](Image/星闪交流群二维码.png)
