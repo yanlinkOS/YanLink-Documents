@@ -97,7 +97,7 @@ The NearLink IoT development kit components include: ① YL63/YL63E core board, 
 **Gitee Repository**
 
 ```
-https://github.com/yanlinkOS/YanLink_OpenSource_Community/NearLink
+https://github.com/yanlinkOS/YanLink_OpenSource_Community/tree/main/NearLink
 ```
 
 The official code repository file structure is as follows.
