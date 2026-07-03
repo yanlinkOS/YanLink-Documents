@@ -34,7 +34,7 @@ Here we look at the data comparison between SparkLink, WiFi, and Bluetooth. From
 
 ### YanLink YL63E Development Board
 
-The W63E core board is a core board from YanLink based on the YL63 solution, which highly integrates a 2.4GHz Wi-Fi & BLE & SLE module. It supports 802.11b/g/n/ax protocols, BLE5.3 protocol, BLE Mesh, and BLE gateway functions. It supports the SLE1.0 protocol and SLE gateway functions. It supports the OpenHarmony/Oniro lightweight system and is suitable for always-on IoT smart scenarios such as large and small appliances and lighting. (The difference between the YL63 and YL63E development boards is that <font color='Peach'>the YL63E supports 2.4GHz radar human activity detection</font>)
+The YL63E core board is a core board from YanLink based on the YL63 solution, which highly integrates a 2.4GHz Wi-Fi & BLE & SLE module. It supports 802.11b/g/n/ax protocols, BLE5.3 protocol, BLE Mesh, and BLE gateway functions. It supports the SLE1.0 protocol and SLE gateway functions. It supports the OpenHarmony/Oniro lightweight system and is suitable for always-on IoT smart scenarios such as large and small appliances and lighting. (The difference between the YL63 and YL63E development boards is that <font color='Peach'>the YL63E supports 2.4GHz radar human activity detection</font>)
 
 The YL63/YL63E has the following features:
 
