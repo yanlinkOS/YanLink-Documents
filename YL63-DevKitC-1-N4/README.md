@@ -1,152 +1,139 @@
-### 前言
+### Preface
 
-​	哈喽，大家好，相信很多新手开发者都有一个疑问，什么是星闪？星闪技术相比于传统的WiFi和BLE有什么区别和优势？
+Hello everyone, I believe many novice developers have a question: what is NearLink? What are the differences and advantages of NearLink technology compared to traditional WiFi and BLE?
 
-​	首先，回答第一个问题，<font color='Peach'>星闪（NearLink）</font>，是中国原生的新一代无线短距通信技术。面向万物互联时代，星闪引入关键技术和创新理念，赋予智能终端新的连接方式。
+First, to answer the first question, <font color='Peach'>NearLink (NearLink)</font> is a new generation of native Chinese wireless short-range communication technology. Aiming at the era of the Internet of Everything, NearLink introduces key technologies and innovative concepts, providing smart terminals with new connection methods.
 
 ![NearLink_Logo](Image/NearLink_Logo.png)
 
-<center>（图片来源：海思官网）</center>
+<center>(Image source: Hisilicon official website)</center>
 
-​	第二个问题，我们从星闪的系统架构来看，在图中NearLink一共有**基础应用层、基础服务层、星闪接入层**。
+The second question: From the system architecture of SparkLink, the diagram shows that NearLink consists of three layers: the **Basic Application Layer**, the **Basic Service Layer**, and the **SparkLink Access Layer**.
 
-**基础应用层：**
+**Basic Application Layer:**
 
-​	基础应用层用于实现各类应用功能、服务于不通过领域，包括智能座舱、智慧家居、智能终端、智能制造等不同场景。
+The Basic Application Layer is used to implement various application functions and serve different fields, including scenarios such as smart cockpits, smart homes, smart terminals, and smart manufacturing.
 
-**基础服务层：**
+**Basic Service Layer:**
 
-​	基础服务层除了设备与服务发现、QoS、实时流传输与控制、高安全等，NearLink还在这里实现了<font color='each '>多域协调与管理</font>和<font color='each'>5G融合</font>技术。
+In addition to device and service discovery, QoS, real-time streaming transmission and control, and high security, NearLink also implements <font color='each '>multi-domain coordination and management</font> and <font color='each'>5G convergence</font> technologies at this layer.
 
-**星闪接入层：**
+**SparkLink Access Layer:**
 
-​	星闪接入层提供了<font color='Peach'>SparkLink Low Energy（SLE）</font>、<font color='Peach'>SparkLink Basic（SLB）</font>两种通信接口。SLE对标的是蓝牙，其特点是低功耗、低时延、高可靠；SLB对标的是WiFi，其特点是大带宽、大容量、大精度。
+The SparkLink Access Layer provides two communication interfaces: <font color='Peach'>SparkLink Low Energy (SLE)</font> and <font color='Peach'>SparkLink Basic (SLB)</font>. SLE is comparable to Bluetooth, characterized by low power consumption, low latency, and high reliability; SLB is comparable to WiFi, characterized by large bandwidth, large capacity, and high precision.
 
 ![a4a8f6d81e9271655edca1d3a49d05e](Image/NearLink的系统架构.png)
 
-<center>NearLink系统架构（资料来源：星闪无线短距通信技术（SparkLink1.0）产业化推进白皮书）</center>
+<center>NearLink System Architecture (Source: SparkLink Wireless Short-Range Communication Technology (SparkLink1.0) Industrialization Promotion White Paper)</center>
 
-**星闪、WiFi、蓝牙参数对比**
+**Comparison of SparkLink, WiFi, and Bluetooth Parameters**
 
 ![img](Image/蓝牙、WiFi、星闪数据对比.png)
 
-<center>蓝牙5.3、WiFi 7、星闪参数对比（来源：鲜枣课堂《到底什么是“星闪”》）</center>
+<center>Bluetooth 5.3, WiFi 7, and SparkLink Parameter Comparison (Source: Fresh Date Classroom "What Exactly Is 'SparkLink'")</center>
 
-​	这里我们看一下星闪与WiFi和蓝牙的数据对比，从表中可以看到星闪在时延、最大连接数、通信距离都是“遥遥领先”。
+Here we look at the data comparison between SparkLink, WiFi, and Bluetooth. From the table, it can be seen that SparkLink is "far ahead" in terms of latency, maximum number of connections, and communication distance.
 
-### 润和W63E开发板
+### Runhe W63E Development Board
 
-​	W63E核心板是润和基于海思WS63解决方案，在核心板上高度集成的2.4GHzWi-Fi&BLE&SLE的HH-SPARK-WS63模组的核心板。支持802.11b/g/n/ax协议，支持BLE5.3协议，BLE Mesh和BLE网关功能。支持SLE1.0协议，支持SLE网关功能。支持OpenHarmony轻量系统，适用于大小家电、电工照明等常电类物联网智能场景。（NearLink_DK_WS63与NearLink_DK_WS63E开发板的区别在于，<font color='Peach'>NearLink_DK_WS63E支持2.4GHz的雷达人体活动检测功能</font>）
+The W63E core board is a core board from Runhe based on the HiSilicon WS63 solution, which highly integrates a 2.4GHz Wi-Fi & BLE & SLE HH-SPARK-WS63 module. It supports 802.11b/g/n/ax protocols, BLE5.3 protocol, BLE Mesh, and BLE gateway functions. It supports the SLE1.0 protocol and SLE gateway functions. It supports the OpenHarmony lightweight system and is suitable for always-on IoT smart scenarios such as large and small appliances and lighting. (The difference between the NearLink_DK_WS63 and NearLink_DK_WS63E development boards is that <font color='Peach'>the NearLink_DK_WS63E supports 2.4GHz radar human activity detection</font>)
 
-​	NearLink_DK_WS63/WS63E具有以下特点：
+The NearLink_DK_WS63/WS63E has the following features:
 
-​	* 稳定、可靠的通信能力
+* Stable and reliable communication capability
 
-​	* 灵活的组网能力
+* Flexible networking capability
 
-​	* 完善的网络支持
+* Comprehensive network support
 
-​	* 强大的安全引擎
+* Powerful security engine
 
-​	* 开放的操作系统
+* Open operating system
 
 ![image-20240830145044259](Image/WS63、WS63E开发板.jpg)
 
-<center>WS63E核心板</center>
+<center>WS63E Core Board</center>
 
-​	板载基本电路，包括CH340烧录电路、晶振电路、用户按键、LED等等，可以<font color='Blue'>实现一根Type-C数据线完成烧录、调试功能</font>。
+The board integrates basic circuits, including a CH340 programming circuit, crystal oscillator circuit, user buttons, LEDs, etc., enabling <font color='Blue'>programming and debugging with just one Type-C data cable</font>.
 
-#### 1.参数规格
+#### 1. Specifications
 
-| 模块      | 规格描述                                                     |
-| :-------- | :----------------------------------------------------------- |
-| CPU子系统 | * 高性能 32bit 微处理器，最大工作频率 240MHz<br />* 内嵌 SRAM 606KB、ROM 300KB<br />* 内嵌 4MB Flash |
-| 外围接口  | * SPI x 1，QSPI x 1，I2C x 2，I2S x 1，UART x 3，GPIO x 19，ADC x 6,PWM x 8（上述接口通过复用实现）<br />* 外部晶振频率24MHz、40MHz |
-| Software  | * Wi-Fi 模式 STA, Soft-AP and sniffer modes <br />* 安全机制 WPS / WEP / WPA / WPA2 / WPA3<br />* 加密类型 UART Download <br />* 软件开发 SDK <br />* 网络协议 IPv4, TCP/UDP/HTTP/FTP/MQTT |
-| WiFi      | * 1×1 2.4GHz 频段（ch1～ch14）<br />* PHY支持 IEEE 802.11b/g/n/ax MAC 支持 IEEE 802.11d/e/i/k/v/w<br />* 支持 802.11n 20MHz/40MHz 频宽，支持 802.11ax 20MHz频宽<br />* 支持最大速率：150Mbps@HT40 MCS7， 114.7Mbps@HE20 MCS9<br />* 内置 PA 和 LNA，集成 TX/RX Switch、Balun 等<br />* 支持 STA 和 AP 形态，作为 AP 时最大支持 6 个 STA 接入<br />* 支持 A-MPDU、A-MSDU <br />* 支持 Block-ACK <br />* 支持 QoS，满足不同业务服务质量需求<br />* 支持 WPA/WPA2/WPA3 personal、WPS2.0 <br />* 支持 RF 自校准方案 <br />* 支持 STBC 和 LDPC<br />* <font color='Red'>支持雷达感知功能（仅限W63E）</font> |
-| 蓝牙      | * 低功耗蓝牙 Bluetooth Low Energy（BLE）<br />* 支持 BLE 4.0/4.1/4.2/5.0/5.1/5.2 <br />* 支持 125Kbps、500Kbps、1Mbps、2Mbps 速率 <br />* 支持多路广播<br />* 支持 Class 1 <br />* 支持高功率 20dBm<br />* 支持 BLE Mesh，支持 BLE 网关 |
-| 星闪      | * 星闪低功耗接入技术 Sparklink Low Energy（SLE）<br />* 支持 SLE 1.0<br />* 支持 SLE 1MHz/2MHz/4MHz，最大空口速率 12Mbps<br />* 支持 Polar 信道编码<br />* 支持 SLE 网关 |
-| 其他信息  | * 电源电压输入：典型值5V<br />* 工作温度：-40℃～+85℃         |
+| Module     | Specification Description                                    |
+| :--------- | :----------------------------------------------------------- |
+| CPU Subsystem | * High-performance 32-bit microprocessor, maximum operating frequency 240MHz<br />* Embedded SRAM 606KB, ROM 300KB<br />* Embedded 4MB Flash |
+| Peripheral Interfaces | * SPI x 1, QSPI x 1, I2C x 2, I2S x 1, UART x 3, GPIO x 19, ADC x 6, PWM x 8 (The above interfaces are implemented through multiplexing)<br />* External crystal oscillator frequencies 24MHz, 40MHz |
+| Software   | * Wi-Fi Modes STA, Soft-AP and sniffer modes <br />* Security Mechanisms WPS / WEP / WPA / WPA2 / WPA3<br />* Encryption Type UART Download <br />* Software Development SDK <br />* Network Protocols IPv4, TCP/UDP/HTTP/FTP/MQTT |
+| WiFi       | * 1×1 2.4GHz band (ch1～ch14)<br />* PHY supports IEEE 802.11b/g/n/ax MAC supports IEEE 802.11d/e/i/k/v/w<br />* Supports 802.11n 20MHz/40MHz bandwidth, supports 802.11ax 20MHz bandwidth<br />* Supports maximum data rate: 150Mbps@HT40 MCS7, 114.7Mbps@HE20 MCS9<br />* Built-in PA and LNA, integrated TX/RX Switch, Balun, etc.<br />* Supports STA and AP modes, supports up to 6 STA connections when operating as AP<br />* Supports A-MPDU, A-MSDU <br />* Supports Block-ACK <br />* Supports QoS, meeting different service quality requirements<br />* Supports WPA/WPA2/WPA3 personal, WPS2.0 <br />* Supports RF self-calibration scheme <br />* Supports STBC and LDPC<br />* <font color='Red'>Supports radar sensing function (W63E only)</font> |
+| Bluetooth  | * Bluetooth Low Energy (BLE)<br />* Supports BLE 4.0/4.1/4.2/5.0/5.1/5.2 <br />* Supports data rates of 125Kbps, 500Kbps, 1Mbps, 2Mbps <br />* Supports multi-casting<br />* Supports Class 1 <br />* Supports high power 20dBm<br />* Supports BLE Mesh, supports BLE Gateway |
+| SparkLink  | * Sparklink Low Energy (SLE)<br />* Supports SLE 1.0<br />* Supports SLE 1MHz/2MHz/4MHz, maximum air interface data rate 12Mbps<br />* Supports Polar channel coding<br />* Supports SLE Gateway |
+| Other Information | * Power Supply Voltage Input: Typical 5V<br />* Operating Temperature: -40℃～+85℃ |
 
-<center>（来源：《NearLink_DK_WS63E 星闪开发板规格说明书_V1.0》）</center>
+<center>(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Sheet_V1.0")</center>
 
-#### 2.WS63/WS63E星闪核心板功能布局
+#### 2. WS63/WS63E SparkLink Core Board Functional Layout
 
 ![img](Image/WS63、WS63E开发板.png)
 
-<center>（来源：《NearLink_DK_WS63E 星闪开发板规格说明书_V1.0》）</center>
+<center>(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Sheet_V1.0")</center>
 
-#### 3.尺寸
+#### 3. Dimensions
 
 ![img](Image/尺寸图.png)
 
-<center>（来源：《NearLink_DK_WS63E 星闪开发板规格说明书_V1.0》）</center>
+<center>(Source: "NearLink_DK_WS63E Sparkle Development Board Specification Sheet_V1.0")</center>
 
-#### 4.功能框图
+#### 4. Functional Block Diagram
 
 ![img](Image/功能框图.png)
 
-<center>（来源：《NearLink_DK_WS63E 星闪开发板规格说明书_V1.0》）</center>
+(Source: "NearLink_DK_WS63E SparkLink Development Board Specification Manual_V1.0")
 
-#### 5.星闪派开发套件
+#### 5. SparkLink Development Kit
 
 ![img](Image/星闪派开发套件.png)
 
-​	星闪派物联网开发套件组件包括①WS63/WS63E核心板、②物联网底板、③显示板、④NFC板、⑤环境监测板、⑥智能红绿灯板、⑦智能（炫彩）灯板、⑧Type-C数据线。
+The NearLink IoT development kit components include: ① WS63/WS63E core board, ② IoT base board, ③ display board, ④ NFC board, ⑤ environmental monitoring board, ⑥ smart traffic light board, ⑦ smart (colorful) light board, ⑧ Type-C data cable.
 
-#### 6.资料
+#### 6. Documentation
 
-**Gitee仓库**
+**Gitee Repository**
 
 ```
 https://gitee.com/hihope_iot/near-link
 ```
 
-​	官方代码仓文件结构如下。
+The official code repository file structure is as follows.
 
 ```
 near-link
-|---NearLink_DK_WS63                # WS63星闪开发板产品说明书和规格说明书
-|---NearLink_DK_WS63E               # WS63E星闪开发板产品说明书和规格说明书
-|---NearLink_Pi_IOT                 # 星闪派物联网开发套件使用说明书和规格说明书
+|---NearLink_DK_WS63                # WS63 NearLink development board product manual and specification sheet
+|---NearLink_DK_WS63E               # WS63E NearLink development board product manual and specification sheet
+|---NearLink_Pi_IOT                 # NearLink IoT development kit user manual and specification sheet
 |---OH-SDK                          # WS63-OH-SDK
-|---demo                            # WS63开发板测试例程
-  |---button_example    			# 按键中断测试例程
-  |---demo_uart						# UART串口测试例程
-  |---easy_wifi_demo                # wifi功能测试例程
-  |---hello_world_demo              # i2c功能、OLED显示测试例程 
-  |---led_demo                      # gpio功能测试例程 
-  |---sle_uart_demo					# SLE串口测试例程
+|---demo                            # WS63 development board test examples
+  |---button_example                # Button interrupt test example
+  |---demo_uart                     # UART serial port test example
+  |---easy_wifi_demo                # WiFi function test example
+  |---hello_world_demo              # I2C function, OLED display test example
+  |---led_demo                      # GPIO function test example
+  |---sle_uart_demo                 # SLE serial port test example
 |---firmware                        
-  |---WS63                          # WS63开发板烧录固件
-|---tools                           # WS63开发板烧录工具
+  |---WS63                          # WS63 development board firmware
+|---tools                           # WS63 development board flashing tool
 ```
 
-**海思社区**
+**HiSilicon Community**
 
-星闪专区：https://developer.hisilicon.com/forum/0133146886267870001
+NearLink Zone: https://developer.hisilicon.com/forum/0133146886267870001
 
-Ubuntu环境搭建教程：https://developer.hisilicon.com/postDetail?tid=0269158574011338004
+Ubuntu Environment Setup Tutorial: https://developer.hisilicon.com/postDetail?tid=0269158574011338004
 
-Docker环境配置教程：https://developer.hisilicon.com/postDetail?tid=0203158573698502004
+Docker Environment Configuration Tutorial: https://developer.hisilicon.com/postDetail?tid=0203158573698502004
 
-**开发板购买**
+**Development Board Purchase**
 
-【淘宝】https://m.tb.cn/h.gMYOYubi9LnWmiE?tk=leLR35rcbCs HU0025 「润和WS63E星闪开发板2.4GWiFi+BLE+SLE支持雷达感知及OpenHarmony」
+[Taobao] https://m.tb.cn/h.gMYOYubi9LnWmiE?tk=leLR35rcbCs HU0025 "Runhe WS63E NearLink Development Board 2.4G WiFi + BLE + SLE Supports Radar Sensing and OpenHarmony"
 
-**星闪开发者技术交流群**
+**NearLink Developer Technical Exchange Group**
 
 ![img](Image/星闪交流群二维码.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
