@@ -97,18 +97,18 @@ The NearLink IoT development kit components include: ① YL63/YL63E core board, 
 **Gitee Repository**
 
 ```
-https://gitee.com/hihope_iot/near-link
+https://github.com/yanlinkOS/YanLink_OpenSource_Community/NearLink
 ```
 
 The official code repository file structure is as follows.
 
 ```
 near-link
-|---NearLink_DK_WS63                # WS63 NearLink development board product manual and specification sheet
-|---NearLink_DK_WS63E               # WS63E NearLink development board product manual and specification sheet
+|---NearLink_DK_YL63                # YL63 NearLink development board product manual and specification sheet
+|---NearLink_DK_YL63E               # YL63E NearLink development board product manual and specification sheet
 |---NearLink_Pi_IOT                 # NearLink IoT development kit user manual and specification sheet
-|---OH-SDK                          # WS63-OH-SDK
-|---demo                            # WS63 development board test examples
+|---OH-SDK                          # YL63-OH-SDK
+|---demo                            # YL63 development board test examples
   |---button_example                # Button interrupt test example
   |---demo_uart                     # UART serial port test example
   |---easy_wifi_demo                # WiFi function test example
@@ -116,6 +116,6 @@ near-link
   |---led_demo                      # GPIO function test example
   |---sle_uart_demo                 # SLE serial port test example
 |---firmware                        
-  |---WS63                          # WS63 development board firmware
-|---tools                           # WS63 development board flashing tool
+  |---YL63                          # YL63 development board firmware
+|---tools                           # YL63 development board flashing tool
 ```
